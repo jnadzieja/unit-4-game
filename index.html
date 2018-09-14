@@ -8,34 +8,28 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <!-- Title of Document -->
-  <title>Math avec Les Cristaux</title>
+  <title>Maths avec Les Cristaux</title>
 
   <!-- Bootstrap CSS Tag -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
 
-  <!-- Bootstrap jQuery Tags-->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+  <!-- jQuery Tag -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 
-  <!-- Personal CSS and JS Tags -->
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="stylesheet" href="/assets/css/reset.css">
-  <script src="/assets/javascript/game.js"></script>
 </head>
 
-<body style="background-color: pink;">
+<body style="background-color: lightgrey;">
   <div class="container">
 
     <!-- Jumbotron with Heading -->
     <div class="row">
       <div class="col-12">
         <div class="jumbotron mx-auto text-center mb-0" style="background-color: transparent; color:dodgerblue; font-size: 50px; font-family: Georgia, 'Times New Roman', Times, serif;">
-          Math avec Les Cristaux
+          Maths avec Les Cristaux
         </div>
       </div>
     </div>
@@ -59,14 +53,21 @@
       <div class="col-1"></div>
 
       <div class="col-5 mx-auto text-center" style="color: dodgerblue"><br>
-        <span id="targetNumber" class="align-middle" style="font-size: 28px;">-</span>
+        <span id="target-number" class="align-middle" style="font-size: 28px;">---</span>
       </div>
 
       <div class="col-5 mx-auto text-center" style="color: dodgerblue">
-        <span id="winLoss" class="align-middle" style="font-size: 28px;">Wins: <br> Losses: </span>
+        <span id="win-loss" class="align-middle" style="font-size: 28px;">Wins: 0 <br> Losses: 0</span>
       </div>
 
       <div class="col-1"></div>
+    </div>
+
+    <!-- Row for Start Game button -->
+    <div class="row">
+      <div class="col-12 mx-auto text-center">
+        <button id="start-game">Start Game</button>
+      </div>
     </div>
 
     <!-- Crystal buttons/images go here -->
@@ -82,12 +83,15 @@
       <div class="col-1"></div>
 
       <div class="col-10 mx-auto text-center" style="color: dodgerblue;">
-        <span id="currentScore" class="align-middle" style="font-size: 28px;">Current Score: 0</span>
+        <span id="current-score" class="align-middle" style="font-size: 28px;">Current Score: 0</span>
       </div>
 
       <div class="col-1"></div>
     </div>
   </div>
+
+  <script href="/assets/javascript/game.js"></script> 
+  
 </body>
 
 </html>
